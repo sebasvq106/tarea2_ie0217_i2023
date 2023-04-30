@@ -59,3 +59,17 @@ void selectionSort(int arr[], int n){
         arr[smallest_index] = temp;
     }
 }
+
+void insertionSort(int arr[], int n){
+    int actual = 0;
+    for(int i = 1; i < n; i++){
+        actual = arr[i];
+        int var_comp = i -1;
+        while((var_comp >= 0) && (actual < arr[var_comp])){
+            arr[var_comp+1] = arr[var_comp];
+            var_comp--;
+        }
+        arr[var_comp + 1] = actual;
+
+    }
+}
