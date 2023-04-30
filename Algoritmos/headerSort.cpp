@@ -42,3 +42,20 @@ void bubbleSort(int arr[], int n){
         }
     }
 }   
+
+void selectionSort(int arr[], int n){
+    int smallest_index = 0;
+    int temp = 0;
+    for (int i = 0; i < n-1; i++){
+        smallest_index = i;
+        for (int j = 0; j < n - i -1; j++){
+           if (arr[j] < arr[smallest_index]){
+            smallest_index = j;
+           } 
+        }
+
+        temp = arr[i];
+        arr[i] = arr[smallest_index];
+        arr[smallest_index] = temp;
+    }
+}
