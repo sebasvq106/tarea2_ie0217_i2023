@@ -73,3 +73,33 @@ void insertionSort(int arr[], int n){
 
     }
 }
+
+void quickSort(int arr[], int low, int high){
+    int i = low;
+    int j = high;
+    int temp;
+    int pivote = arr[(low + high) / 2];
+
+    while (i <= j){
+
+        while (arr[i] < pivote)
+        i++;
+        while (arr[j] > pivote)
+        j--;
+
+        if (i <= j) {
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    };
+
+    if (low < j){
+        quickSort(arr, low, j);
+    }
+    if (i < high){
+        quickSort(arr, i , high);
+    }
+}
