@@ -19,6 +19,13 @@ La complejidad del algoritmo es de O(n^2) en el peor de los casos, debido a que 
 #### **QuickSort**
 La complejidad expresada en Big O se puede expresar como O(n log n) en promedio y O(n^2) en su peor caso. Esto va a depender del pivote escogido. Este algoritmo es más eficiente que los anteriores cuando se tienen arreglos muy grandes.
 
+### **Uso:**
+Para la utilización del código se tiene que seguir los siguientes lineamientos:
+
+Todos los arreglos tienen un tamaño definido de 7, si se quiere cambiar este tamaño cambie el valor de *SIZE_ARRAY_#*, para el bubbleSort el numero seria 1, para selectionSort, insertionSort y quickSort serian 2,3 y 4 respectivamente.
+
+Luego de cambiar el tamaño del arreglo se tiene que modificar los valores del arreglo para que coincida el rango. 
+
 ### **Contacto:**
 Sebastián Vargas Quesada
 correo: sebasvq106@gmail.com

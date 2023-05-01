@@ -29,22 +29,25 @@
 
 using namespace std;
 
-#define SIZE_ARRAY 7
+#define SIZE_ARRAY_1 7
+#define SIZE_ARRAY_2 7
+#define SIZE_ARRAY_3 7
+#define SIZE_ARRAY_4 7
 
 int main(){
     int arreglo_1[] = {17, 89, 42, 75, 33, 50, 94};
 
     cout << "Arreglo original: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_1; i++){
         cout << arreglo_1[i] << " ";
     }
     cout << endl;
     cout << endl;
 
-    bubbleSort(arreglo_1, SIZE_ARRAY);
+    bubbleSort(arreglo_1, SIZE_ARRAY_1);
 
     cout << "Arreglo con BubbleSort: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_1; i++){
         cout << arreglo_1[i] << " ";
     }
     cout << endl;
@@ -52,15 +55,15 @@ int main(){
     int arreglo_2[] = {12, 68, 97, 23, 55, 81, 39};
 
     cout << "Arreglo original: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_2; i++){
         cout << arreglo_2[i] << " ";
     }
     cout << endl;
     cout << endl;
 
-    selectionSort(arreglo_2, SIZE_ARRAY);
+    selectionSort(arreglo_2, SIZE_ARRAY_2);
     cout << "Arreglo con selectionSort: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_2; i++){
         cout << arreglo_2[i] << " ";
     }
     cout << endl;
@@ -69,15 +72,15 @@ int main(){
     int arreglo_3[] = {5, 71, 13, 60, 29, 88, 47};
 
     cout << "Arreglo original: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_3; i++){
         cout << arreglo_3[i] << " ";
     }
     cout << endl;
     cout << endl;
 
-    insertionSort(arreglo_3, SIZE_ARRAY);
+    insertionSort(arreglo_3, SIZE_ARRAY_3);
     cout << "Arreglo con insertionSort: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_3; i++){
         cout << arreglo_3[i] << " ";
     }
     cout << endl;
@@ -86,15 +89,15 @@ int main(){
     int arreglo_4[] = {77, 19, 52, 98, 36, 63, 10};
 
     cout << "Arreglo original: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_4; i++){
         cout << arreglo_4[i] << " ";
     }
     cout << endl;
     cout << endl;
 
-    quickSort(arreglo_4, 0, SIZE_ARRAY -1);
+    quickSort(arreglo_4, 0, SIZE_ARRAY_4 -1);
     cout << "Arreglo con QuickSort: " << endl;
-    for (int i = 0; i < SIZE_ARRAY; i++){
+    for (int i = 0; i < SIZE_ARRAY_4; i++){
         cout << arreglo_4[i] << " ";
     }
     cout << endl;
