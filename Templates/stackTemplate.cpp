@@ -127,7 +127,7 @@ int main() {
     std::cout << "Value: " << value << std::endl;
   });
 
-  // Se eliminara y se imprimira el ultimo valor si la pila no esta vacia, si esta vacia saltara una excepcion
+  // Se eliminara y se imprimira el ultimo valor si la pila no esta vacia, si esta vacia saltara una excepcion.
   try {
     while (!s.empty()) {
       int value = s.pop();
@@ -138,5 +138,28 @@ int main() {
     std::cerr << "Exception: " << e.what() << std::endl;
   }
 
+  std::cout << "Nueva Pila con valores tipo double: " << std::endl;
+  // Creacion de una nueva instancia con valores tipo double.
+  Stack<double> s2;
+
+  // Se insertan valores a la pila.
+  s2.push(3.14);
+  s2.push(11.11);
+  s2.push(543.87);
+
+  // Se imprimen todos los valores de la pila.
+   s2.foreach([](double& value) {
+    std::cout << "Value: " << value << std::endl;
+  });
+
+  // Se imprime el tamano de la pila. 
+  std::cout << "Stack size: " << s2.size() << std::endl;
+
+  // Se eliminan todos los valores de la pila.
+  s2.clear();
+
+  // Se intenta sacar el ultimo valor.
+  // double value = s2.pop();
+  // Esto disparia la exepcion ya que la pila esta vacia.
   return 0;
 }
