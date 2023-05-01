@@ -29,16 +29,37 @@ OTROS ACUERDOS EN EL SOFTWARE.
 #include <stdexcept>
 #include <functional>
 
+/**
+ * @brief Template para la clase Stack
+ * 
+ * @tparam T 
+ */
 template<typename T>
+
+/**
+ * @class Stack
+ * @brief Clase que representa una pila
+ * 
+ */
 class Stack {
 private:
-  std::vector<T> data_;
+  std::vector<T> data_; /**< Vector que guarda objetos de tipo T*/
 
 public:
+  /**
+   * @brief Funcion que agrega objetos de tipo T a la pila
+   * 
+   * @param value 
+   */
   void push(T value) {
     data_.push_back(value);
   }
 
+  /**
+   * @brief Funcion que elimina el ultimo obejto y retorna el ultimo objeto que habia en la pila siempre y cuando la pila no este vacia
+   * 
+   * @return T 
+   */
   T pop() {
     if (data_.empty()) {
       throw std::out_of_range("Stack is empty");
@@ -48,35 +69,65 @@ public:
     return value;
   }
 
+  /**
+   * @brief Funcion que elimina todos lo objetos de la pila
+   * 
+   */
   void clear() {
     data_.clear();
   }
 
+  /**
+   * @brief Funcion que verifica si la pila esta vacia o no
+   * 
+   * @return true 
+   * @return false 
+   */
   bool empty() const {
     return data_.empty();
   }
 
+  /**
+   * @brief Funcion que obtiene y retorna el tamano de la pila
+   * 
+   * @return std::size_t 
+   */
   std::size_t size() const {
     return data_.size();
   }
 
+  /**
+   * @brief Funcion que recorre valor por valor la pila y se le aplica la funcion func.
+   * 
+   * @param func 
+   */
   void foreach(const std::function<void(T&)>& func) {
     std::for_each(data_.begin(), data_.end(), func);
   }
 };
 
+/**
+ * @brief Funcion que asigna valores y llama funciones
+ * 
+ * @return int 
+ */
 int main() {
-  Stack<int> s;
+  Stack<int> s; // Se crea una pila vacia con numeros enteros.
+
+  // Se insertan valores a la pila.
   s.push(2021);
   s.push(2054);
   s.push(6524);
 
+  // Se imprime el tamano de la pila.
   std::cout << "Stack size: " << s.size() << std::endl;
 
+  // Se imprimen todos los valores que hay en la pila
   s.foreach([](int& value) {
     std::cout << "Value: " << value << std::endl;
   });
 
+  // Se eliminara y se imprimira el ultimo valor si la pila no esta vacia, si esta vacia saltara una excepcion
   try {
     while (!s.empty()) {
       int value = s.pop();
