@@ -43,11 +43,11 @@ template<typename T>
  */
 class Stack {
 private:
-  std::vector<T> data_; /**< Vector que guarda objetos de tipo T*/
+  std::vector<T> data_; /**< Vector que guarda elementos de tipo T*/
 
 public:
   /**
-   * @brief Funcion que agrega objetos de tipo T a la pila
+   * @brief Funcion que agrega elementos de tipo T a la pila
    * 
    * @param value 
    */
@@ -56,7 +56,7 @@ public:
   }
 
   /**
-   * @brief Funcion que elimina el ultimo obejto y retorna el ultimo objeto que habia en la pila siempre y cuando la pila no este vacia
+   * @brief Funcion que elimina el ultimo elemento y retorna el ultimo elemento que habia en la pila siempre y cuando la pila no este vacia
    * 
    * @return T 
    */
@@ -70,7 +70,7 @@ public:
   }
 
   /**
-   * @brief Funcion que elimina todos lo objetos de la pila
+   * @brief Funcion que elimina todos lo elementos de la pila
    * 
    */
   void clear() {
