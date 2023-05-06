@@ -4,6 +4,18 @@
 
 Este código implenta los templates para la creacion de un stack que el cual se puede definir de tipo int, double, ect. 
 
+### **Includes:**
+
+El include: *#include <iostream>* es necesario ya que utilizamos el *std::cout* para impimir un mensaje.
+
+El include: *#include <vector>* es necesario para crear la pila.
+
+El include: *#include <algorithm>* es necesario ya que se utiliza la funcion *for_each* la cual se encuentra en esa biblioteca.
+
+El include: *#iclude <stdexcept>* es necesario ya que se utiliza la excepcion *out_of_range* la cual se encuentra en esa bilbioteca.
+
+El include: *#iclude <functional>* es necesario ya que usamos: *std::function< >&* la cual se encuentra dentro de esta biblioteca.
+
 ### **Uso:**
 Para la utilización del código se tiene que seguir los siguientes lineamientos:
 
