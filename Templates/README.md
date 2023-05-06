@@ -29,6 +29,7 @@ Para eliminar todos los elementos de la pila se usa: *name.clear*.
 
 Para eliminar y obtener el ultimo valor se usa la funció: *pop()*.
 
+Para correr el programa se tiene que usar el archivo Makefile al poner en la terminal: *mingw32-make*. Al hacer esto se creara un archivo llamado *template.exe* y se ejecutara.
 ### **Contacto:**
 Sebastián Vargas Quesada
 correo: sebasvq106@gmail.com
