@@ -30,9 +30,15 @@
 
 #include <exception>
 
+/**
+ * @class MyException
+ * @brief Esta clase crea una excepcion propia heredando de la clase exception
+ * 
+ */
 class MyException : public std::exception {
     public:
-        const char* what() const throw(){
+        // what() devuelve un puntero a una cadena de char* y throw indica que esto no levantara una excepcion
+        const char* what() const throw() {
             return "My custom exception";
         }
 };
