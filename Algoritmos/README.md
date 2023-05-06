@@ -1,0 +1,33 @@
+## Algoritmos de ordenamiento 👻 
+
+### **Introducción:**
+
+Este código implementa los siguientes algoritmos: BubbleSort, SelectionSort, InsertionSort y QuickSort. 
+
+### **Complejidad de cada algoritmo**
+Se va determinar la complejidad de cada algoritmo utilizando la notacion Big O y los resultados son los siguientes:
+
+#### **BubbleSort**
+La complejidad de este algoritmo en Big O es de O(n^2) en su peor caso, debido a que posee dos bucles que recorren el arreglo. Por lo tanto, se puede concluir que este algoritmo no es eficiente para arreglos muy grandes.
+
+#### **SelectionSort**
+La complejidad al igual que el BubbleSort es de O(n^2) por el mismo motivo, presenta dos bucles que tienen que recorrer todo el arreglo. De manera similar, este algoritmo pierde eficiencia a medida que el arreglo es más grande.
+
+#### **InsertionSort**
+La complejidad del algoritmo es de O(n^2) en el peor de los casos, debido a que se tiene que comparar cada elemento de la lista y moverlo a su posición correcto lo que utiliza dos bucles. Para arreglos muy grandes este algoritmo es ineficiente.
+
+#### **QuickSort**
+La complejidad expresada en Big O se puede expresar como O(n log n) en promedio y O(n^2) en su peor caso. Esto va a depender del pivote escogido. Este algoritmo es más eficiente que los anteriores cuando se tienen arreglos muy grandes.
+
+### **Uso:**
+Para la utilización del código se tiene que seguir los siguientes lineamientos:
+
+Todos los arreglos tienen un tamaño definido de 7, si se quiere cambiar este tamaño cambie el valor de *SIZE_ARRAY_#*, para el bubbleSort el numero seria 1, para selectionSort, insertionSort y quickSort serian 2,3 y 4 respectivamente.
+
+Luego de cambiar el tamaño del arreglo se tiene que modificar los valores del arreglo para que coincida el rango. 
+
+Para correr el programa se tiene que usar el archivo Makefile al poner en la terminal: *mingw32-make*. Al hacer esto se creara un archivo llamado *algoritmos.exe* y se ejecutara.
+
+### **Contacto:**
+Sebastián Vargas Quesada
+correo: sebasvq106@gmail.com
