@@ -26,6 +26,8 @@ Todos los arreglos tienen un tamaño definido de 7, si se quiere cambiar este ta
 
 Luego de cambiar el tamaño del arreglo se tiene que modificar los valores del arreglo para que coincida el rango. 
 
+Para correr el programa se tiene que usar el archivo Makefile al poner en la terminal: *mingw32-make*. Al hacer esto se creara un archivo llamado *algoritmos.exe* y se ejecutara.
+
 ### **Contacto:**
 Sebastián Vargas Quesada
 correo: sebasvq106@gmail.com
