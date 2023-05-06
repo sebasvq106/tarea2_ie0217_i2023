@@ -1,4 +1,4 @@
-# Expeciones 💩  
+# Excepciones 💩  
 
 ### **Introducción:**
 
@@ -11,7 +11,7 @@ Para correr el programa de *exceptions.cpp* se tiene que usar el archivo Makefil
 
 Para correr el programa de *excepciones_estandar.cpp* se tiene que usar el archivo Makefile al poner en la terminal: *mingw32-make estandar*. Al hacer esto se creara un archivo llamado *estandar.exe* y se ejecutara.
 
-##### **Aviso**
+### **Aviso**
 A la hora de compilar el archivo *excepciones_estandar.cpp* saltara un warning sobre el tamaño del arreglo. Esto debido a que para activar el *bad_alloc* se necesita que haya un error en la asignación de memoria. 
 
 ### **Contacto:**
